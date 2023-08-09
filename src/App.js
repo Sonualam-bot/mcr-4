@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import { Route, Routes } from "react-router";
 import './App.css';
+import { Homepage } from "./pages/Homepage";
+import { Header } from "./component/header/Header";
+import { NavigationLeft } from "./component/navigationLeft/NavigationLeft";
+import { NavigationRight } from "./component/NavigationRight/NavigationRight";
+import { Comment } from "./comment/Comment";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="App">
+
+
+
+        <div>
+          <NavigationLeft />
+        </div>
+
+        <div className="midContainer">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/comments/:postId" element={<Comment />} />
+          </Routes>
+        </div>
+
+        <div>
+          <NavigationRight />
+        </div>
+
+      </div>
+    </>
   );
 }
 

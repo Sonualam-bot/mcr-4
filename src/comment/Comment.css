@@ -1,0 +1,48 @@
+.commentContainer {
+  display: flex;
+  gap: 0.78rem;
+  align-items: flex-start;
+  padding: 7px;
+  width: 100%;
+}
+
+.commentContainer > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.commentSpecial {
+  display: flex;
+  font-size: 0.856rem;
+  align-items: center;
+  gap: 0.254rem;
+  width: 100%;
+}
+
+.commentSpecial > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.commentSideContainer > h4 {
+  font-weight: 600;
+}
+
+.commentSideContainer > p > span {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.commentShare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 7px;
+  border-top: 1px solid grey;
+}
+
+.commenthero {
+  width: 70vw;
+  padding: 10px;
+}

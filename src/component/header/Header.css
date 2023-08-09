@@ -1,0 +1,8 @@
+.header {
+  height: 10vh;
+  background-color: whitesmoke;
+}
+.header > h2 {
+  margin-left: 3.7rem;
+  padding-top: 0.56rem;
+}

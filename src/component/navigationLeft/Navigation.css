@@ -1,0 +1,32 @@
+.navigationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 85vh;
+  /* border-right: 1px solid grey; */
+}
+
+.leftSpecialHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.innerNavHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.78rem;
+}
+
+.bottomProfileContainer {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  background-color: grey;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
